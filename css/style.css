@@ -13,22 +13,47 @@
 
 img{
   width: 100%;
-}
-.grid{
-display: flex;
-flex-flow: row wrap;
-overflow: auto;
-width: 100%;
+  display: block;
+  margin-top: 4%;
 }
 
 .shrink{
   width:10%;
 }
 
-.big{
-  width: 40%;
+
+body{
+  background: no-repeat url('background.png') center/cover;
 }
 
+section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 600px;
+  width: 100%;
+}
+
+
+.grid{
+  margin-top: 2%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+button,select{
+  margin-bottom: 12%;
+}
+
+.gridImages{
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 400%;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/

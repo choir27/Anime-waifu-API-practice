@@ -20,18 +20,10 @@ function addSFWImage(){
   .then(data=>{
    let image = document.createElement('img')
    image.src = data.url
-   image = DOM('div').appendChild(image)
+   image = DOM('.gridImages').appendChild(image)
    image.addEventListener('click',shrinkIt)
    function shrinkIt(){
-    image.classList.remove('big')
     image.classList.add('shrink')
-   }
-
-   image.addEventListener('mouseover',growIt)
-   function growIt(){
-    image.classList.remove('shrink')
-    image.classList.add('big')
-
    }
 })
 }
